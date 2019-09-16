@@ -1,13 +1,13 @@
 import React from "react";
 
-const Travel = props =>(
+const Travel = ({image,destination,country,distance}) =>(
   <figure>
-    <img src= {props.image}/>
+    <img src= {image} alt={destination}/>
     <figcaption>
-      <blockquote>{props.Destination}
+      <blockquote>{destination}
       </blockquote>
-      <blockquote>{props.Country}</blockquote>
-      <cite>{props.distance}</cite>
+      <blockquote>{country}</blockquote>
+      <cite>{distance}</cite>
     </figcaption>
   </figure>
 );
